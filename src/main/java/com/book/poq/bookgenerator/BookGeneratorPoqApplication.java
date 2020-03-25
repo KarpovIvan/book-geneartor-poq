@@ -1,13 +1,13 @@
-package com.mykyta.bookgenerator;
+package com.book.poq.bookgenerator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BookgeneratorApplication {
+public class BookGeneratorPoqApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BookgeneratorApplication.class, args);
+        SpringApplication.run(BookGeneratorPoqApplication.class, args);
     }
 
 }

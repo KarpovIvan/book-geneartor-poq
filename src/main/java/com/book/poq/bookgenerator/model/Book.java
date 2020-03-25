@@ -1,4 +1,4 @@
-package com.mykyta.bookgenerator.model;
+package com.book.poq.bookgenerator.model;
 
 public class Book {
     private int id;

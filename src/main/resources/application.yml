@@ -1,7 +1,21 @@
 server:
-  port: 8090
+  port: 8098
 
 spring:
+  profiles:
+    active: docker
+  kafka:
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+---
+spring:
+  profiles: dev
   kafka:
     bootstrap-servers: localhost:9092
-    consumer.group-id: myGroup
+
+---
+spring:
+  profiles: docker
+  kafka:
+    bootstrap-servers: kafka:9092
